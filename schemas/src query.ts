@@ -1,4 +1,4 @@
-// src/query.ts  (Lin, 2026, Ch. 3)
+// src/query.ts
 async function* queryLoop(
   params: QueryParams,
   consumedCommandUuids: string[],
