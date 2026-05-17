@@ -1,4 +1,4 @@
-// src/query.ts
+// The queryLoop() function signature and State type initialisation from src/query.ts
 async function* queryLoop(
   params: QueryParams,
   consumedCommandUuids: string[],
