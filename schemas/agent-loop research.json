@@ -1,0 +1,20 @@
+// Proposed provenance record schema for agent-loop research, illustrating reporting requirements. Fields capture trajectory, human intervention points, and review procedures.
+{
+  "study_id":                  "AUA-UM-2025-001",
+  "agent_architecture":        "PRAO / ReAct",
+  "foundation_model":          "claude-sonnet-4-6",
+  "stopping_criterion":        "max_iterations=15 OR researcher_approval=true",
+  "total_iterations_executed": 9,
+  "human_intervention_points": [3, 7],
+  "interventions": {
+    "3": "Researcher revised sampling criterion for document retrieval",
+    "7": "Researcher rejected AI-generated causal interpretation, substituted own"
+  },
+  "autonomous_actions": [
+    "statistical_model_selection",
+    "thematic_codebook_generation",
+    "outlier_flagging"
+  ],
+  "trajectory_hash":           "sha256:4f8b2a...",
+  "post_loop_review":          "Full trajectory reviewed by two independent researchers"
+}
